@@ -28,7 +28,7 @@ router.get('/', getTransactions);
  * @swagger
  * /api/v1/transactions/{id}:
  *    get:
- *      summary: Get a transaction by ID
+ *      summary: Get a single transaction by ID
  *      produces:
  *        - application/json
  *      tags:
@@ -42,7 +42,7 @@ router.get('/', getTransactions);
  *          example: 1
  *      responses:
  *        "200":
- *          description: Returns a an envelope along with its data
+ *          description: Returns an envelope along with its data
  *        "404":
  *          description: Transaction not found
  *        "500":
