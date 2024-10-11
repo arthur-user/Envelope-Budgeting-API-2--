@@ -1,8 +1,8 @@
 {
-    "name": "portfolio-budgetAPI",
+    "name": "Portfolio BudgetAPI 2",
     "version": "1.0.0",
-    "description": "API for portfolio budget",
-    "main": "index.js",
+    "description": "API for envelope budget",
+    "main": "app.js",
     "scripts": {
         "dev": "nodemon app",
         "start": "node app"
@@ -11,8 +11,9 @@
     "license": "ISC",
     "dependencies": {
         "dotenv": "^16.4.5",
-        "express": "^2.5.11",
+        "express": "^4.21.0",
         "morgan": "^1.10.0",
+        "pg": "^8.13.0",
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^4.1.2"
     },
