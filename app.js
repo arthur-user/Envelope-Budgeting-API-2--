@@ -13,10 +13,6 @@ const app = express();
 app.use(logger("dev"));
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('Envelope Budgeting API!');
-});
-
 app.use("/api-docs", docsRouter);
 
 app.use("/api/v1/envelopes", envelopesRouter);
