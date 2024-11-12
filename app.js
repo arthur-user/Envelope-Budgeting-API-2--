@@ -13,6 +13,10 @@ const app = express();
 app.use(logger("dev"));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Portfolio Budget API!");
+});
+
 app.use("/api-docs", docsRouter);
 
 app.use("/api/v1/envelopes", envelopesRouter);
