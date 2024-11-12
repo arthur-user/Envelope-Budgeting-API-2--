@@ -1,16 +1,16 @@
-require('dotenv').config()
+require('dotenv').config();
 
-const { Pool } = require('pg')
+const { Pool } = require('pg');
 
-const isProduction = process.env.NODE_ENV === 'production'
+// Use DATABASE_URL if it's available (Render will provide this in production)
+const connectionString = process.env.DATABASE_URL;
 
-// If in production, use the full DATABASE_URL, otherwise manually build the connection string
-const connectionString = `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_DATABASE}`
+const isProduction = process.env.NODE_ENV === 'production';
 
 // Create a new Pool to manage database connections
 const db = new Pool({
-    connectionString: isProduction ? process.env.DATABASE_URL : connectionString,
-    ssl: isProduction, // Enable SSL in production (required for Render PostgreSQL)
-})
+  connectionString: connectionString,
+  ssl: isProduction, // Enable SSL for production (required by Render's PostgreSQL)
+});
 
-module.exports = { db }
+module.exports = { db };
