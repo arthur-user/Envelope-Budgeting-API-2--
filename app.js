@@ -14,7 +14,7 @@ app.use(logger("dev"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Portfolio Budget API!");
+  res.send("Welcome to Portfolio Budget API 2!");
 });
 
 app.use("/api-docs", docsRouter);
