@@ -6,7 +6,7 @@ A Node.js API using the Express framework with the purpose of calculating daily 
 
 To locally run the application, Node.js needs to be installed. Install the required dependencies through `npm install`.
 
-Once the application is running locally, the documentation may be accessed at `http://localhost:5000/api/api-docs`
+Once the application is running locally, the documentation may be accessed at `http://localhost:5000/api-docs/`
 
 ## Using Swagger to test:
 
