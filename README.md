@@ -34,5 +34,5 @@ Available Swagger tests:
 - Establish a new API endpoint where users can add a single balance that's shared across several envelopes
 
 
-Possible dependency issues: 📍
+## Possible dependency issues: 📍
 Please check the appropriate versions of the software used in package.json. The Node modules are included within the node_modules folder
