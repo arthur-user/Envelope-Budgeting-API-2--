@@ -1,6 +1,6 @@
 # Personal budget API 2 📃📃
 
-A Node.js API using the Express framework with the purpose of calculating daily budget expenditure with the means of envelope budgeting. Users are able to create, read, update, delete (CRUD) as well as create transactions for individual envelopes. Envelope data is persisted in a database through PostgreSQL. 
+A Node.js API using the Express framework with the purpose of calculating daily budget expenditure with the means of [envelope budgeting](https://www.investopedia.com/envelope-budgeting-system-5208026). Users are able to create, read, update, delete (CRUD) as well as create transactions for individual envelopes. Envelope data is persisted in a database through PostgreSQL. 
 
 ## Running the application:
 
